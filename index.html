@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wei Te Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - CHEN ZiHang</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
-        <img src="assets/profile.jpg" alt="Profile Photo" class="profile-pic">
-        <h1>Wei Te</h1>
-        <p>Speech Algorithm Engineer | AI & DSP | Huawei DCN</p>
-    </header>
+  <header>
+    <h1 id="name"></h1>
+    <p>
+      <a id="email" href=""></a> | 
+      <a id="github" href="" target="_blank"></a>
+    </p>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>PhD in Electrical Engineering, specializing in Wi-Fi algorithms and large-scale bandwidth optimization. Experienced in distributed Wi-Fi, FPGA design, and AI-driven signal processing.</p>
+  <div id="lang-switch">
+    <button onclick="setLanguage('zh')">中文</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
+
+  <main>
+    <section>
+      <h2 id="section_intro_title"></h2>
+      <p id="section_intro"></p>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, C/C++, MATLAB</li>
-            <li>PyTorch, TensorFlow, Kaldi</li>
-            <li>FPGA design, Verilog</li>
-            <li>Wi-Fi & Campus Network Algorithms</li>
-        </ul>
+    <section>
+      <h2 id="section_edu_title"></h2>
+      <ul id="section_edu"></ul>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Campus WA Optimization</strong> – Improved throughput by 25% using distributed Wi-Fi algorithm.
-            </li>
-            <li>
-                <strong>FPGA-based Signal Processing</strong> – Designed high-performance FPGA modules for network optimization.
-            </li>
-        </ul>
+    <section>
+      <h2 id="section_work_title"></h2>
+      <ul id="section_work"></ul>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:weite@example.com">weite@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+    <section>
+      <h2 id="section_intern_title"></h2>
+      <ul id="section_intern"></ul>
     </section>
+
+    <section>
+      <h2 id="section_skill_title"></h2>
+      <ul id="section_skill"></ul>
+    </section>
+  </main>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
